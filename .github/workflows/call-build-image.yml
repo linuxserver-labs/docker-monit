@@ -10,6 +10,3 @@ jobs:
     with:
       repo_owner: ${{ github.repository_owner }}
       app_name: "monit"
-#      dockerhub_user: "linuxserver-labs"
-#    secrets:
-#      dockerhub_password: ${{ secrets.DOCKER_PASSWORD }}
