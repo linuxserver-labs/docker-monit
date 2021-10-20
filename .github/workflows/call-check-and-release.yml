@@ -12,5 +12,5 @@ jobs:
       repo_owner: ${{ github.repository_owner }}
       app_name: "monit"
       release_type: "alpine"
-      release_url: "edge/main"
+      release_url: "v3.14/main"
       release_name: "monit"
