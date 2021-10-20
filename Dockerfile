@@ -3,7 +3,7 @@ FROM ghcr.io/linuxserver/baseimage-alpine:3.14
 # set version label
 ARG BUILD_DATE
 ARG VERSION
-ARG MONIT_RELEASE
+ARG APP_VERSION
 LABEL build_version="Linuxserver.io version:- ${VERSION} Build-date:- ${BUILD_DATE}"
 LABEL maintainer="thespad"
 
@@ -23,7 +23,7 @@ RUN \
     python3 \
     py3-pip && \
   apk add -U --upgrade --no-cache \
-    monit==${MONIT_RELEASE} && \
+    monit==${APP_VERSION} && \
   pip install -U --no-cache-dir --find-links https://wheel-index.linuxserver.io/alpine/ \
     apprise && \
   apk del --purge \
