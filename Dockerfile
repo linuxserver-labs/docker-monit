@@ -22,6 +22,11 @@ RUN \
     curl \
     python3 \
     py3-pip && \
+  echo "**** install monit ****" && \
+  if [ -z ${APP_VERSION+x} ]; then \    
+    APP_VERSION=$(curl -sL "http://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/APKINDEX.tar.gz" | tar -xz -C /tmp \
+    && awk '/^P:'"monit"'$/,/V:/' /tmp/APKINDEX | sed -n 2p | sed 's/^V://'); \
+  fi && \    
   apk add -U --upgrade --no-cache \
     monit==${APP_VERSION} && \
   pip install -U --no-cache-dir --find-links https://wheel-index.linuxserver.io/alpine/ \
