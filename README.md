@@ -10,6 +10,8 @@
 [![GitHub](https://img.shields.io/static/v1.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=linuxserver.io&message=GitHub&logo=github)](https://github.com/linuxserver "view the source for all of our repositories.")
 [![Open Collective](https://img.shields.io/opencollective/all/linuxserver.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=Supporters&logo=open%20collective)](https://opencollective.com/linuxserver "please consider helping us by either donating or contributing to our budget")
 
+> ## **_WARNING:_**  Linuxserver Labs images are *not* production ready and we do not provide support for them. They are experimental and could change/break at any time. Please do not deploy them anywhere important
+
 The [LinuxServer.io](https://linuxserver.io) team brings you another container release featuring:
 
 * regular and timely application updates
@@ -27,16 +29,13 @@ Find us at:
 * [GitHub](https://github.com/linuxserver) - view the source for all of our repositories.
 * [Open Collective](https://opencollective.com/linuxserver) - please consider helping us by either donating or contributing to our budget
 
-# [linuxserver/monit](https://github.com/linuxserver/docker-monit)
+# [linuxserver/monit](https://github.com/linuxserver-labs/docker-monit)
 
-[![GitHub Stars](https://img.shields.io/github/stars/linuxserver/docker-monit.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&logo=github)](https://github.com/linuxserver/docker-monit)
-[![GitHub Release](https://img.shields.io/github/release/linuxserver/docker-monit.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&logo=github)](https://github.com/linuxserver/docker-monit/releases)
-[![GitHub Package Repository](https://img.shields.io/static/v1.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=linuxserver.io&message=GitHub%20Package&logo=github)](https://github.com/linuxserver/docker-monit/packages)
-[![GitLab Container Registry](https://img.shields.io/static/v1.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=linuxserver.io&message=GitLab%20Registry&logo=gitlab)](https://gitlab.com/linuxserver.io/docker-monit/container_registry)
-[![Docker Pulls](https://img.shields.io/docker/pulls/linuxserver/monit.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=pulls&logo=docker)](https://hub.docker.com/r/linuxserver/monit)
-[![Docker Stars](https://img.shields.io/docker/stars/linuxserver/monit.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=stars&logo=docker)](https://hub.docker.com/r/linuxserver/monit)
-[![Jenkins Build](https://img.shields.io/jenkins/build?labelColor=555555&logoColor=ffffff&style=for-the-badge&jobUrl=https%3A%2F%2Fci.linuxserver.io%2Fjob%2FDocker-Pipeline-Builders%2Fjob%2Fdocker-monit%2Fjob%2Fmain%2F&logo=jenkins)](https://ci.linuxserver.io/job/Docker-Pipeline-Builders/job/docker-monit/job/main/)
-[![LSIO CI](https://img.shields.io/badge/dynamic/yaml?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=CI&query=CI&url=https%3A%2F%2Fci-tests.linuxserver.io%2Flinuxserver%2Fmonit%2Flatest%2Fci-status.yml)](https://ci-tests.linuxserver.io/linuxserver/monit/latest/index.html)
+[![GitHub Stars](https://img.shields.io/github/stars/linuxserver/docker-monit.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&logo=github)](https://github.com/linuxserver-labs/docker-monit)
+[![GitHub Release](https://img.shields.io/github/release/linuxserver/docker-monit.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&logo=github)](https://github.com/linuxserver-labs/docker-monit/releases)
+[![GitHub Package Repository](https://img.shields.io/static/v1.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=linuxserver.io&message=GitHub%20Package&logo=github)](https://github.com/linuxserver-labs/docker-monit/packages)
+[![Docker Pulls](https://img.shields.io/docker/pulls/linuxserver/monit.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=pulls&logo=docker)](https://hub.docker.com/r/linuxserver-labs/monit)
+[![Docker Stars](https://img.shields.io/docker/stars/linuxserver/monit.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=stars&logo=docker)](https://hub.docker.com/r/linuxserver-labs/monit)
 
 [monit](https://www.monit.com/products/open-source-log-management/) is a small Open Source utility for managing and monitoring Unix systems.
 
@@ -46,7 +45,7 @@ Find us at:
 
 Our images support multiple architectures such as `x86-64`, `arm64` and `armhf`. We utilise the docker manifest for multi-platform awareness. More information is available from docker [here](https://github.com/docker/distribution/blob/master/docs/spec/manifest-v2-2.md#manifest-list) and our announcement [here](https://blog.linuxserver.io/2019/02/21/the-lsio-pipeline-project/).
 
-Simply pulling `ghcr.io/linuxserver/monit` should retrieve the correct image for your arch, but you can also pull specific arch images via tags.
+Simply pulling `ghcr.io/linuxserver-labs/monit` should retrieve the correct image for your arch, but you can also pull specific arch images via tags.
 
 The architectures supported by this image are:
 
@@ -77,7 +76,7 @@ Here are some example snippets to help you get started creating a container.
 version: "2.1"
 services:
   monit:
-    image: ghcr.io/linuxserver/monit
+    image: ghcr.io/linuxserver-labs/monit
     container_name: monit
     environment:
       - PUID=1000
@@ -103,7 +102,7 @@ docker run -d \
   -p 2812:2812 \
   -v /path/to/config:/config \
   --restart unless-stopped \
-  ghcr.io/linuxserver/monit
+  ghcr.io/linuxserver-labs/monit
 ```
 
 ## Parameters
@@ -162,7 +161,7 @@ We publish various [Docker Mods](https://github.com/linuxserver/docker-mods) to 
 * container version number
   * `docker inspect -f '{{ index .Config.Labels "build_version" }}' monit`
 * image version number
-  * `docker inspect -f '{{ index .Config.Labels "build_version" }}' ghcr.io/linuxserver/monit`
+  * `docker inspect -f '{{ index .Config.Labels "build_version" }}' ghcr.io/linuxserver-labs/monit`
 
 ## Updating Info
 
@@ -180,7 +179,7 @@ Below are the instructions for updating containers:
 
 ### Via Docker Run
 
-* Update the image: `docker pull ghcr.io/linuxserver/monit`
+* Update the image: `docker pull ghcr.io/linuxserver-labs/monit`
 * Stop the running container: `docker stop monit`
 * Delete the container: `docker rm monit`
 * Recreate a new container with the same docker run parameters as instructed above (if mapped correctly to a host folder, your `/config` folder and settings will be preserved)
@@ -210,12 +209,12 @@ Below are the instructions for updating containers:
 If you want to make local modifications to these images for development purposes or just to customize the logic:
 
 ```bash
-git clone https://github.com/linuxserver/docker-monit.git
+git clone https://github.com/linuxserver-labs/docker-monit.git
 cd docker-monit
 docker build \
   --no-cache \
   --pull \
-  -t ghcr.io/linuxserver/monit:latest .
+  -t ghcr.io/linuxserver-labs/monit:latest .
 ```
 
 The ARM variants can be built on x86_64 hardware using `multiarch/qemu-user-static`
@@ -228,4 +227,4 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
-* **05.08.21:** - Initial release.
+* **20.10.21:** - Initial release.
