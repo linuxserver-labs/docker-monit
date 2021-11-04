@@ -15,4 +15,4 @@ jobs:
       release_url: "v3.14/main"
       release_name: "monit"
     secrets:
-      repo_scoped_token: ${{ secrets.repo_release_token }}
+      repo_release_token: ${{ secrets.repo_release_token }}
