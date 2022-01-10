@@ -31,11 +31,10 @@ Find us at:
 
 # [linuxserver/monit](https://github.com/linuxserver-labs/docker-monit)
 
-[![GitHub Stars](https://img.shields.io/github/stars/linuxserver/docker-monit.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&logo=github)](https://github.com/linuxserver-labs/docker-monit)
-[![GitHub Release](https://img.shields.io/github/release/linuxserver/docker-monit.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&logo=github)](https://github.com/linuxserver-labs/docker-monit/releases)
+[![Scarf.io pulls](https://scarf.sh/installs-badge/linuxserver-ci/linuxserver-labs%2Fmonit?color=94398d&label-color=555555&logo-color=ffffff&style=for-the-badge&package-type=docker)](https://scarf.sh/gateway/linuxserver-ci/docker/linuxserver-labs%2Fmonit)
+[![GitHub Stars](https://img.shields.io/github/stars/linuxserver-labs/docker-monit.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&logo=github)](https://github.com/linuxserver-labs/docker-monit)
+[![GitHub Release](https://img.shields.io/github/release/linuxserver-labs/docker-monit.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&logo=github)](https://github.com/linuxserver-labs/docker-monit/releases)
 [![GitHub Package Repository](https://img.shields.io/static/v1.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=linuxserver.io&message=GitHub%20Package&logo=github)](https://github.com/linuxserver-labs/docker-monit/packages)
-[![Docker Pulls](https://img.shields.io/docker/pulls/linuxserver/monit.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=pulls&logo=docker)](https://hub.docker.com/r/linuxserver-labs/monit)
-[![Docker Stars](https://img.shields.io/docker/stars/linuxserver/monit.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=stars&logo=docker)](https://hub.docker.com/r/linuxserver-labs/monit)
 
 [monit](https://www.monit.com/products/open-source-log-management/) is a small Open Source utility for managing and monitoring Unix systems.
 
