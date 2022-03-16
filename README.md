@@ -7,7 +7,7 @@
 [![Discord](https://img.shields.io/discord/354974912613449730.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=Discord&logo=discord)](https://discord.gg/YWrKVTn "realtime support / chat with the community and the team.")
 [![Discourse](https://img.shields.io/discourse/https/discourse.linuxserver.io/topics.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&logo=discourse)](https://discourse.linuxserver.io "post on our community forum.")
 [![Fleet](https://img.shields.io/static/v1.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=linuxserver.io&message=Fleet)](https://fleet.linuxserver.io "an online web interface which displays all of our maintained images.")
-[![GitHub](https://img.shields.io/static/v1.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=linuxserver.io&message=GitHub&logo=github)](https://github.com/linuxserver "view the source for all of our repositories.")
+[![GitHub](https://img.shields.io/static/v1.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=linuxserver.io&message=GitHub&logo=github)](https://github.com/linuxserver-labs "view the source for all of our repositories.")
 [![Open Collective](https://img.shields.io/opencollective/all/linuxserver.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=Supporters&logo=open%20collective)](https://opencollective.com/linuxserver "please consider helping us by either donating or contributing to our budget")
 
 > ## **_WARNING:_**  Linuxserver Labs images are *not* production ready and we do not provide support for them. They are experimental and could change/break at any time. Please do not deploy them anywhere important
@@ -29,7 +29,7 @@ Find us at:
 * [GitHub](https://github.com/linuxserver) - view the source for all of our repositories.
 * [Open Collective](https://opencollective.com/linuxserver) - please consider helping us by either donating or contributing to our budget
 
-# [linuxserver/monit](https://github.com/linuxserver-labs/docker-monit)
+# [linuxserver-labs/monit](https://github.com/linuxserver-labs/docker-monit)
 
 [![Scarf.io pulls](https://scarf.sh/installs-badge/linuxserver-ci/linuxserver-labs%2Fmonit?color=94398d&label-color=555555&logo-color=ffffff&style=for-the-badge&package-type=docker)](https://scarf.sh/gateway/linuxserver-ci/docker/linuxserver-labs%2Fmonit)
 [![GitHub Stars](https://img.shields.io/github/stars/linuxserver-labs/docker-monit.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&logo=github)](https://github.com/linuxserver-labs/docker-monit)
@@ -48,11 +48,11 @@ Simply pulling `ghcr.io/linuxserver-labs/monit` should retrieve the correct imag
 
 The architectures supported by this image are:
 
-| Architecture | Tag |
-| :----: | --- |
-| x86-64 | latest |
-| arm64 | arm64v8-latest |
-| armhf | arm32v7-latest |
+| Architecture | Available | Tag |
+| :----: | :----: | ---- |
+| x86-64 | ✅ | latest |
+| arm64 | ✅ | latest |
+| armhf | ✅ | latest |
 
 ## Application Setup
 
@@ -75,7 +75,7 @@ Here are some example snippets to help you get started creating a container.
 version: "2.1"
 services:
   monit:
-    image: ghcr.io/linuxserver-labs/monit
+    image: lscr.io/linuxserver-labs/monit:latest
     container_name: monit
     environment:
       - PUID=1000
@@ -101,7 +101,7 @@ docker run -d \
   -p 2812:2812 \
   -v /path/to/config:/config \
   --restart unless-stopped \
-  ghcr.io/linuxserver-labs/monit
+  ghcr.io/linuxserver-labs/monit:latest
 ```
 
 ## Parameters
