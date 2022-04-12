@@ -6,12 +6,13 @@ on:
 
 jobs:
   call-workflow:
-    uses: linuxserver-labs/docker-actions/.github/workflows/build-image.yml@v5
+    uses: linuxserver-labs/docker-actions/.github/workflows/build-image.yml@v6
     with:
       repo_owner: ${{ github.repository_owner }}
       app_name: "monit"
       release_type: "alpine"
       release_url: "v3.15/main"
       release_name: "monit"
+      target-arch: "all"
     secrets:
       scarf_token: ${{ secrets.SCARF_TOKEN }}
