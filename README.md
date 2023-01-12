@@ -36,9 +36,7 @@ Find us at:
 [![GitHub Release](https://img.shields.io/github/release/linuxserver-labs/docker-monit.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&logo=github)](https://github.com/linuxserver-labs/docker-monit/releases)
 [![GitHub Package Repository](https://img.shields.io/static/v1.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=linuxserver.io&message=GitHub%20Package&logo=github)](https://github.com/linuxserver-labs/docker-monit/packages)
 
-[monit](https://www.monit.com/products/open-source-log-management/) is a small Open Source utility for managing and monitoring Unix systems.
-
-[![monit](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/monit-logo.png)](https://www.monit.com/products/open-source-log-management/)
+[monit](https://mmonit.com/monit/#about) is a small Open Source utility for managing and monitoring Unix systems.
 
 ## Supported Architectures
 
@@ -62,7 +60,7 @@ Edit `/config/monitrc` to add services to monitor. Use `then exec "/config/monit
 
 Edit `/config/monit2apprise.sh` to customise the alert message.
 
-More info at [monit](https://mmonit.com/monit/).
+More info at [monit](https://mmonit.com/monit/#documentation).
 
 ## Usage
 
