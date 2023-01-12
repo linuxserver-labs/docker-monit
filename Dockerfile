@@ -19,8 +19,6 @@ RUN \
     openssl-dev \
     cargo && \
   apk add -U --upgrade --no-cache  \
-    bash \
-    curl \
     python3 \
     py3-pip && \
   echo "**** install monit ****" && \
