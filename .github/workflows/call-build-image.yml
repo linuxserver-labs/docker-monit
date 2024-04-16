@@ -4,10 +4,11 @@ on:
   release:
     types: [ published ]
   pull_request:
+  workflow_dispatch:
 
 jobs:
   call-workflow:
-    uses: linuxserver-labs/docker-actions/.github/workflows/build-image.yml@v6
+    uses: linuxserver-labs/docker-actions/.github/workflows/build-image.yml@v7
     with:
       repo_owner: ${{ github.repository_owner }}
       app_name: "monit"
@@ -15,5 +16,3 @@ jobs:
       release_url: "v3.19/main"
       release_name: "monit"
       target-arch: "64"
-    secrets:
-      scarf_token: ${{ secrets.SCARF_TOKEN }}
