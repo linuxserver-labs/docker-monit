@@ -16,3 +16,5 @@ jobs:
       release_url: "v3.19/main"
       release_name: "monit"
       target-arch: "64"
+    secrets:
+      OP_SERVICE_ACCOUNT_TOKEN: ${{ secrets.OP_SERVICE_ACCOUNT_TOKEN }}
