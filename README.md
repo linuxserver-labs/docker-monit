@@ -66,7 +66,7 @@ More info at [monit](https://mmonit.com/monit/#documentation).
 
 Here are some example snippets to help you get started creating a container.
 
-### docker-compose (recommended, [click here for more info](https://docs.linuxserver.io/general/docker-compose))
+### docker compose (recommended, [click here for more info](https://docs.linuxserver.io/general/docker-compose))
 
 ```yaml
 ---
@@ -167,10 +167,10 @@ Below are the instructions for updating containers:
 
 ### Via Docker Compose
 
-* Update all images: `docker-compose pull`
-  * or update a single image: `docker-compose pull monit`
-* Let compose update all containers as necessary: `docker-compose up -d`
-  * or update a single container: `docker-compose up -d monit`
+* Update all images: `docker compose pull`
+  * or update a single image: `docker compose pull monit`
+* Let compose update all containers as necessary: `docker compose up -d`
+  * or update a single container: `docker compose up -d monit`
 * You can also remove the old dangling images: `docker image prune`
 
 ### Via Docker Run
