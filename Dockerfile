@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 
-FROM ghcr.io/linuxserver/baseimage-alpine:3.19
+FROM ghcr.io/linuxserver/baseimage-alpine:3.20
 
 # set version label
 ARG BUILD_DATE
@@ -21,7 +21,7 @@ RUN \
     python3 && \
   echo "**** install monit ****" && \
   if [ -z ${APP_VERSION+x} ]; then \
-    APP_VERSION=$(curl -sL "http://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/APKINDEX.tar.gz" | tar -xz -C /tmp \
+    APP_VERSION=$(curl -sL "http://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/APKINDEX.tar.gz" | tar -xz -C /tmp \
     && awk '/^P:'"monit"'$/,/V:/' /tmp/APKINDEX | sed -n 2p | sed 's/^V://'); \
   fi && \
   apk add -U --upgrade --no-cache \
@@ -30,8 +30,10 @@ RUN \
   pip3 install -U --no-cache-dir \
     pip \
     wheel && \
-  pip3 install -U --no-cache-dir --find-links https://wheel-index.linuxserver.io/alpine-3.19/ \
+  pip3 install -U --no-cache-dir --find-links https://wheel-index.linuxserver.io/alpine-3.20/ \
     apprise && \
+  printf "Linuxserver-Labs version: ${VERSION}\nBuild-date: ${BUILD_DATE}" > /build_version && \
+  echo "**** cleanup ****" && \
   apk del --purge \
     build-dependencies && \
   rm -rf \

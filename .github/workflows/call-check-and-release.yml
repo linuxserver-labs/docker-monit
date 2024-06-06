@@ -12,7 +12,7 @@ jobs:
       repo_owner: ${{ github.repository_owner }}
       app_name: "monit"
       release_type: "alpine"
-      release_url: "v3.19/main"
+      release_url: "v3.20/main"
       release_name: "monit"
     secrets:
       repo_release_token: ${{ secrets.repo_release_token }}

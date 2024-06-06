@@ -31,7 +31,7 @@ Find us at:
 
 # [linuxserver-labs/monit](https://github.com/linuxserver-labs/docker-monit)
 
-[![Scarf.io pulls](https://scarf.sh/installs-badge/linuxserver-ci/linuxserver-labs%2Fmonit?color=94398d&label-color=555555&logo-color=ffffff&style=for-the-badge&package-type=docker)](https://scarf.sh/gateway/linuxserver-ci/docker/linuxserver-labs%2Fmonit)
+[![Scarf.io pulls](https://scarf.sh/installs-badge/linuxserver-ci/linuxserver-labs%2Fmonit?color=94398d&label-color=555555&logo-color=ffffff&style=for-the-badge&package-type=docker)](https://scarf.sh)
 [![GitHub Stars](https://img.shields.io/github/stars/linuxserver-labs/docker-monit.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&logo=github)](https://github.com/linuxserver-labs/docker-monit)
 [![GitHub Release](https://img.shields.io/github/release/linuxserver-labs/docker-monit.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&logo=github)](https://github.com/linuxserver-labs/docker-monit/releases)
 [![GitHub Package Repository](https://img.shields.io/static/v1.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=linuxserver.io&message=GitHub%20Package&logo=github)](https://github.com/linuxserver-labs/docker-monit/packages)
@@ -208,6 +208,7 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
+* **04.06.24:** - Rebase to Alpine 3.20.
 * **17.03.24:** - Rebase to Alpine 3.19.
 * **12.01.23:** - Rebase to Alpine 3.17, migrate to s6v3.
 * **10.01.22:** - Rebase to Alpine 3.15.
