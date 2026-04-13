@@ -29,7 +29,7 @@ RUN \
   python3 -m venv /lsiopy && \
   pip3 install -U --no-cache-dir \
     pip \
-    wheel && \
+    setuptools && \
   pip3 install -U --no-cache-dir --find-links https://wheel-index.linuxserver.io/alpine-3.23/ \
     apprise && \
   printf "Linuxserver-Labs version: ${VERSION}\nBuild-date: ${BUILD_DATE}" > /build_version && \
