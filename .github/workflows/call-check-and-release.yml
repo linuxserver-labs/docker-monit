@@ -7,12 +7,13 @@ on:
 
 jobs:
   call-workflow:
-    uses: linuxserver-labs/docker-actions/.github/workflows/check-and-release.yml@v7.1.0
+    uses: linuxserver-labs/docker-actions/.github/workflows/check-and-release.yml@v8b
     with:
       repo_owner: ${{ github.repository_owner }}
       app_name: "monit"
       release_type: "alpine"
-      release_url: "v3.20/main"
+      release_url: "v3.23/main"
       release_name: "monit"
+      branch_name: main
     secrets:
       repo_release_token: ${{ secrets.repo_release_token }}
